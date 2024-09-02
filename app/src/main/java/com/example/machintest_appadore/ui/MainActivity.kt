@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             object : CountDownTimer(timeDifferenceInMillis, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
                     val secondsRemaining = millisUntilFinished / 1000
-                    if (secondsRemaining <= 21L) {
+                    if (secondsRemaining <= 20L) {
                         val countDownTime = String.format(
                             getString(R.string.countdown_time_formatter),
                             secondsRemaining
@@ -100,15 +99,15 @@ class MainActivity : AppCompatActivity() {
 
                     observeAnswer()
                     startQuestionTimer()
-                    showQuestionLayout(questionObj, countryList)
+                    showFlagChallengeView(questionObj, countryList)
                 }
             }.start()
         }
     }
 
-    private fun showQuestionLayout(questionObj: Questions?, countryList: List<Country>?) {
+    private fun showFlagChallengeView(questionObj: Questions?, countryList: List<Country>?) {
         binding?.timeScheduleView?.isVisible = false
-        val questionCount = if (questionNo == 0) questionNo++ else questionNo
+        val questionCount = if (questionNo == 0) 1 else questionNo
         binding?.questionCount?.text = questionCount.toString()
         binding?.countryFlag?.setImageResource(getCountryFlagByCountryCode(questionObj?.countryCode))
 
@@ -173,7 +172,6 @@ class MainActivity : AppCompatActivity() {
                     isChecked = true
                 }
                 viewModel.selectedCountry = country
-                Log.e("TAG", "selected country: $country")
             }
 
             layoutBinding.root.layoutParams = itemParams
@@ -188,7 +186,7 @@ class MainActivity : AppCompatActivity() {
         binding?.scheduleTimerView?.isVisible = false
         binding?.timeScheduleView?.isVisible = false
         binding?.challengeView?.isVisible = true
-        val questionCount = if (questionNo == 0) questionNo++ else questionNo
+        val questionCount = if (questionNo == 0) 1 else questionNo
         binding?.questionCount?.text = "$questionCount"
         viewModel.userState = PreferenceUtil.UserState.ON_TIME_RUNNING.value
 
@@ -210,7 +208,7 @@ class MainActivity : AppCompatActivity() {
                     val countryList = questionObj?.countries
 
                     Handler(Looper.getMainLooper()).postDelayed({
-                        showQuestionLayout(questionObj, countryList)
+                        showFlagChallengeView(questionObj, countryList)
                         startQuestionTimer()
                     }, 10000)
                 } else {
@@ -424,7 +422,7 @@ class MainActivity : AppCompatActivity() {
                 questionNo = newQuestNo
                 if (timeLeftInMillis != 0L) {
                     startQuestionTimer(timeLeftInMillis)
-                    showQuestionLayout(
+                    showFlagChallengeView(
                         questionObj = questionObj,
                         countryList = countryList
                     )
@@ -435,7 +433,7 @@ class MainActivity : AppCompatActivity() {
             PreferenceUtil.UserState.ON_ANSWER_VALIDATING.value -> {
                 questionNo = newQuestNo
                 Handler(Looper.getMainLooper()).postDelayed({
-                    showQuestionLayout(
+                    showFlagChallengeView(
                         questionObj = questionObj,
                         countryList = countryList
                     )
