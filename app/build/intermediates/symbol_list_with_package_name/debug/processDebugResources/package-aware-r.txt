@@ -3910,6 +3910,8 @@ string clear_text_end_icon_content_description
 string close_drawer
 string close_sheet
 string correct
+string countdown_time_formatter
+string current_time_value
 string default_error_message
 string default_popup_window_title
 string dropdown_menu

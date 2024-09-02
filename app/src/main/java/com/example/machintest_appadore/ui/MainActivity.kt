@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             val currentTimeInMillis = System.currentTimeMillis()
             val startTimeInMillis = savedTime
             val timeDifferenceInMillis = startTimeInMillis - currentTimeInMillis
+            PreferenceUtil(this).clearPreferences()
             startCountdownTimer(timeDifferenceInMillis)
         }
     }
@@ -76,11 +77,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun startCountdownTimer(timeDifferenceInMillis: Long) {
         if (timeDifferenceInMillis > 0) {
-            object : CountDownTimer(10000, 1000) {
+            object : CountDownTimer(timeDifferenceInMillis, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
                     val secondsRemaining = millisUntilFinished / 1000
-                    if (secondsRemaining <= 10L) {
-                        val countDownTime = String.format("00:%02d", secondsRemaining)
+                    if (secondsRemaining <= 21L) {
+                        val countDownTime = String.format(getString(R.string.countdown_time_formatter), secondsRemaining)
                         binding?.challengeStartsCountDown?.text = countDownTime
                         binding?.timeScheduleView?.isVisible = false
                         binding?.scheduleTimerView?.isVisible = true
@@ -105,7 +106,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showQuestionLayout(questionObj: Questions?, countryList: List<Country>?) {
         binding?.timeScheduleView?.isVisible = false
-        binding?.questionCount?.text = questionNo.toString()
+        val questionCount = if (questionNo == 0) questionNo++ else questionNo
+        binding?.questionCount?.text = questionCount.toString()
         binding?.countryFlag?.setImageResource(getCountryFlagByCountryCode(questionObj?.countryCode))
 
         viewModel.answerStatusId.postValue(questionObj?.answerId)
@@ -165,13 +167,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun startQuestionTimer(millisInFuture: Long = 5000) {
+    private fun startQuestionTimer(millisInFuture: Long = 30000) {
         binding?.scheduleTimerView?.isVisible = false
         binding?.timeScheduleView?.isVisible = false
         binding?.challengeView?.isVisible = true
         val questionCount = if (questionNo == 0) questionNo++ else questionNo
         binding?.questionCount?.text = "$questionCount"
-        Log.e("TAG","question count start: $questionNo")
         viewModel.userState = PreferenceUtil.UserState.ON_TIME_RUNNING.value
 
         questionCountDown?.cancel()
@@ -194,7 +195,7 @@ class MainActivity : AppCompatActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         showQuestionLayout(questionObj, countryList)
                         startQuestionTimer()
-                    }, 1000)
+                    }, 10000)
                 } else {
                     showScoreView()
                 }
@@ -233,7 +234,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI(millisUntilFinished: Long) {
         val secondsRemaining = millisUntilFinished / 1000
-        val countDownTime = String.format("00:%02d", secondsRemaining)
+        val countDownTime = String.format(getString(R.string.countdown_time_formatter), secondsRemaining)
         binding?.btnTimePicker?.text = countDownTime
     }
 
@@ -290,7 +291,7 @@ class MainActivity : AppCompatActivity() {
 
         val timeFormat = if (amPm == Calendar.AM) "AM" else "PM"
         val formattedHour = if (hour == 0) 12 else hour
-        val timeNow = String.format("%02d:%02d %s",formattedHour,minute,timeFormat)
+        val timeNow = String.format(getString(R.string.current_time_value),formattedHour,minute,timeFormat)
 
         binding?.btnTimePicker?.text = timeNow
     }
@@ -315,9 +316,11 @@ class MainActivity : AppCompatActivity() {
             val AM_PM = calender.get(Calendar.AM_PM)
             val timeFormat = if (AM_PM == Calendar.AM) 0 else 1
             val formattedHour = if (selectedHour % 12 == 0) 12 else selectedHour % 12
+            val hour = if (formattedHour.toString().length == 1) "0$formattedHour"
+            else formattedHour
 
-            binding?.hourDigit1?.text = formattedHour.toString().first().toString()
-            binding?.hourDigit2?.text = formattedHour.toString().last().toString()
+            binding?.hourDigit1?.text = hour.toString().first().toString()
+            binding?.hourDigit2?.text = hour.toString().last().toString()
             binding?.minuteDigit1?.text = selectedMinute.toString().first().toString()
             binding?.minuteDigit2?.text = selectedMinute.toString().last().toString()
             binding?.secondsDigit1?.text = seconds.toString().first().toString()
@@ -362,11 +365,6 @@ class MainActivity : AppCompatActivity() {
         updateUserState()
     }
 
-    override fun onStart() {
-        super.onStart()
-        updateUserState()
-    }
-
     private fun updateUserState() {
         val timeLeftInMillis = PreferenceUtil(this).fetchEndTime()
         val newQuestNo = PreferenceUtil(this).fetchQuestionNo()
@@ -381,8 +379,6 @@ class MainActivity : AppCompatActivity() {
         val questionObj = flagChallenge.questions?.get(newQuestNo)
         val countryList = questionObj?.countries
 
-        Log.e("TAG", "Userstate: $userState")
-
         when(userState) {
             PreferenceUtil.UserState.ON_TIME_RUNNING.value -> {
                 questionNo = newQuestNo
@@ -392,7 +388,7 @@ class MainActivity : AppCompatActivity() {
                         questionObj = questionObj,
                         countryList = countryList
                     )
-                    PreferenceUtil(this).clearPreferences()
+                    //PreferenceUtil(this).clearPreferences()
                 }
             }
             PreferenceUtil.UserState.ON_ANSWER_VALIDATING.value -> {

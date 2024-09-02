@@ -67,6 +67,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string correct
+string countdown_time_formatter
+string current_time_value
 string score
 string wrong
 style Base.Theme.MachinTestAppAdore

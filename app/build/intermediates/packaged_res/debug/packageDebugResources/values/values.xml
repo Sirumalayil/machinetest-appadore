@@ -12,6 +12,8 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">MachinTest-AppAdore</string>
     <string name="correct">CORRECT</string>
+    <string name="countdown_time_formatter">00:%02d</string>
+    <string name="current_time_value">%02d:%02d %s</string>
     <string name="score">SCORE:</string>
     <string name="wrong">WRONG</string>
     <style name="Base.Theme.MachinTestAppAdore" parent="Theme.MaterialComponents.Light.NoActionBar">
