@@ -219,8 +219,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun getTotalScore(): String {
         val totalQuestions = flagChallenge.questions?.size
-        val score = viewModel.userAnswerDataMap?.values?.count { it == "correct" }
-        return "$score/$totalQuestions"
+        val score = viewModel.userAnswerDataMap.values.count { it == "correct" }
+        return "$score/${totalQuestions ?: "0"}"
     }
 
     private fun validateAnswer() {
@@ -276,20 +276,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateScoreData(key: Int, value: String) {
-        if (viewModel.userAnswerDataMap?.containsKey(key) == true) {
-            viewModel.userAnswerDataMap?.remove(key)
+        if (viewModel.userAnswerDataMap.containsKey(key)) {
+            viewModel.userAnswerDataMap.remove(key)
         }
-        viewModel.userAnswerDataMap?.set(key, value)
-
+        viewModel.userAnswerDataMap[key] = value
     }
 
     private fun setCurrentTime() {
         val calender = Calendar.getInstance()
         val hour = calender.get(Calendar.HOUR)
         val minute = calender.get(Calendar.MINUTE)
-        val AM_PM = calender.get(Calendar.AM_PM)
+        val amPm = calender.get(Calendar.AM_PM)
 
-        val timeFormat = if (AM_PM == Calendar.AM) "AM" else "PM"
+        val timeFormat = if (amPm == Calendar.AM) "AM" else "PM"
         val formattedHour = if (hour == 0) 12 else hour
         val timeNow = String.format("%02d:%02d %s",formattedHour,minute,timeFormat)
 
@@ -330,7 +329,7 @@ class MainActivity : AppCompatActivity() {
             val hourOfDay = if (isAM && selectedHour == 12) {
                 0
             } else if (!isAM && selectedHour != 12) {
-                selectedHour + 12 // Convert PM to 24-hour format
+                selectedHour + 12
             } else {
                 selectedHour
             }
@@ -411,7 +410,10 @@ class MainActivity : AppCompatActivity() {
                 showScoreView()
             }
             PreferenceUtil.UserState.ON_GAME_SCORE_VIEW.value -> {
+                binding?.challengeView?.isVisible = false
+                binding?.timeScheduleView?.isVisible = false
                 binding?.textGameOver?.isVisible = false
+                binding?.gameOverView?.isVisible = true
                 binding?.scoreView?.isVisible = true
                 binding?.textScore?.text = getTotalScore()
                 viewModel.userState = PreferenceUtil.UserState.ON_GAME_SCORE_VIEW.value
