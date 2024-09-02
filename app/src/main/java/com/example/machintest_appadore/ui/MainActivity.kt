@@ -97,9 +97,11 @@ class MainActivity : AppCompatActivity() {
                     val questionObj = flagChallenge.questions?.get(0)
                     val countryList = questionObj?.countries
 
-                    observeAnswer()
-                    startQuestionTimer()
+                    binding?.questionCount?.text = "1"
+                    questionNo = 1
                     showFlagChallengeView(questionObj, countryList)
+                    startQuestionTimer()
+                    observeAnswer()
                 }
             }.start()
         }
@@ -186,8 +188,6 @@ class MainActivity : AppCompatActivity() {
         binding?.scheduleTimerView?.isVisible = false
         binding?.timeScheduleView?.isVisible = false
         binding?.challengeView?.isVisible = true
-        val questionCount = if (questionNo == 0) 1 else questionNo
-        binding?.questionCount?.text = "$questionCount"
         viewModel.userState = PreferenceUtil.UserState.ON_TIME_RUNNING.value
 
         questionCountDown?.cancel()
