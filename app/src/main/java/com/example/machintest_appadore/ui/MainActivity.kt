@@ -58,6 +58,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val userState = PreferenceUtil(this).fetchUserState()
+        if (userState == -1) {
+            binding?.timeScheduleView?.isVisible = true
+        }
+
         setCurrentTime()
         binding?.btnSchedule?.setOnClickListener {
             showTimePicker()
