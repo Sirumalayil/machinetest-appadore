@@ -302,6 +302,7 @@ class MainActivity : AppCompatActivity() {
                     )
                     val buttonView = buttonList[answerId]
                     val newAnswerText = viewModel.listAnswerTextIds[answerId]
+                    newAnswerText?.isVisible = true
                     newAnswerText?.text = getString(R.string.correct)
                     buttonView?.apply {
                         strokeColor = ColorStateList.valueOf(
