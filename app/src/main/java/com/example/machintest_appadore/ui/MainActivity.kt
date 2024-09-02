@@ -37,15 +37,14 @@ class MainActivity : AppCompatActivity() {
     private var savedTime: Long = 0L
     private var questionNo: Int = 0
     private var selectedButton: MaterialButton? = null
-    private var questionCountDown: CountDownTimer?= null
+    private var questionCountDown: CountDownTimer? = null
     private var timerRunning: Boolean = false
     private var timeLeftInMillis: Long = 0L
-    private val buttonList = LinkedHashMap<Int,MaterialButton>()
+    private val buttonList = LinkedHashMap<Int, MaterialButton>()
 
     private val viewModel: FlagChallengeViewModel by lazy {
         ViewModelProvider(this)[FlagChallengeViewModel::class.java]
     }
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             showTimePicker()
         }
         binding?.btnSave?.setOnClickListener {
-            Toast.makeText(this, "Time Saved!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Time Scheduled for Challenge Saved!", Toast.LENGTH_LONG).show()
             val currentTimeInMillis = System.currentTimeMillis()
             val startTimeInMillis = savedTime
             val timeDifferenceInMillis = startTimeInMillis - currentTimeInMillis
@@ -81,7 +80,10 @@ class MainActivity : AppCompatActivity() {
                 override fun onTick(millisUntilFinished: Long) {
                     val secondsRemaining = millisUntilFinished / 1000
                     if (secondsRemaining <= 21L) {
-                        val countDownTime = String.format(getString(R.string.countdown_time_formatter), secondsRemaining)
+                        val countDownTime = String.format(
+                            getString(R.string.countdown_time_formatter),
+                            secondsRemaining
+                        )
                         binding?.challengeStartsCountDown?.text = countDownTime
                         binding?.timeScheduleView?.isVisible = false
                         binding?.scheduleTimerView?.isVisible = true
@@ -98,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
                     observeAnswer()
                     startQuestionTimer()
-                    showQuestionLayout(questionObj,countryList)
+                    showQuestionLayout(questionObj, countryList)
                 }
             }.start()
         }
@@ -145,18 +147,33 @@ class MainActivity : AppCompatActivity() {
 
             buttonView.setOnClickListener {
                 selectedButton?.apply {
-                    setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.grey)) // Reset background to default
-                    setTextColor(ContextCompat.getColor(this@MainActivity, R.color.black)) // Reset text color to default
+                    setBackgroundColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.grey
+                        )
+                    ) // Reset background to default
+                    setTextColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.black
+                        )
+                    ) // Reset text color to default
                     isChecked = false
                 }
                 selectedButton = buttonView
                 selectedButton?.apply {
                     setTextColor(ContextCompat.getColor(this@MainActivity, R.color.white))
-                    setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.primary_blue))
+                    setBackgroundColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.primary_blue
+                        )
+                    )
                     isChecked = true
                 }
                 viewModel.selectedCountry = country
-                Log.e("TAG","selected country: $country")
+                Log.e("TAG", "selected country: $country")
             }
 
             layoutBinding.root.layoutParams = itemParams
@@ -176,7 +193,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.userState = PreferenceUtil.UserState.ON_TIME_RUNNING.value
 
         questionCountDown?.cancel()
-        questionCountDown = object: CountDownTimer(millisInFuture, 1000){
+        questionCountDown = object : CountDownTimer(millisInFuture, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 timeLeftInMillis = millisUntilFinished
                 updateUI(millisUntilFinished)
@@ -215,7 +232,7 @@ class MainActivity : AppCompatActivity() {
             binding?.scoreView?.isVisible = true
             binding?.textScore?.text = getTotalScore()
             viewModel.userState = PreferenceUtil.UserState.ON_GAME_SCORE_VIEW.value
-        },5000)
+        }, 5000)
     }
 
     private fun getTotalScore(): String {
@@ -234,7 +251,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI(millisUntilFinished: Long) {
         val secondsRemaining = millisUntilFinished / 1000
-        val countDownTime = String.format(getString(R.string.countdown_time_formatter), secondsRemaining)
+        val countDownTime =
+            String.format(getString(R.string.countdown_time_formatter), secondsRemaining)
         binding?.btnTimePicker?.text = countDownTime
     }
 
@@ -246,31 +264,52 @@ class MainActivity : AppCompatActivity() {
                 answerText?.isVisible = true
                 answerText?.text = getString(R.string.correct)
                 answerText?.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.green))
-                updateScoreData(questionNo,"correct")
+                updateScoreData(questionNo, "correct")
                 selectedButton?.apply {
-                    strokeColor = ColorStateList.valueOf(ContextCompat.getColor(
-                        this@MainActivity, R.color.green))
-                    setBackgroundColor(ContextCompat.getColor(this@MainActivity,R.color.green))
-                    setTextColor(ContextCompat.getColor(this@MainActivity,R.color.white))
+                    strokeColor = ColorStateList.valueOf(
+                        ContextCompat.getColor(
+                            this@MainActivity, R.color.green
+                        )
+                    )
+                    setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.green))
+                    setTextColor(ContextCompat.getColor(this@MainActivity, R.color.white))
                 }
             } else {
                 val answerText = viewModel.listAnswerTextIds[viewModel.selectedCountry?.id]
                 if (answerText != null) {
                     answerText.isVisible = true
                     answerText.text = getString(R.string.wrong)
-                    answerText.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.colorPrimary))
-                    selectedButton?.setBackgroundColor(ContextCompat.getColor(this@MainActivity,R.color.colorPrimary))
-                    selectedButton?.setTextColor(ContextCompat.getColor(this@MainActivity,R.color.white))
+                    answerText.setTextColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.colorPrimary
+                        )
+                    )
+                    selectedButton?.setBackgroundColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.colorPrimary
+                        )
+                    )
+                    selectedButton?.setTextColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.white
+                        )
+                    )
                     val buttonView = buttonList[answerId]
                     val newAnswerText = viewModel.listAnswerTextIds[answerId]
                     newAnswerText?.text = getString(R.string.correct)
                     buttonView?.apply {
-                        strokeColor = ColorStateList.valueOf(ContextCompat.getColor(
-                            this@MainActivity, R.color.green))
-                        setBackgroundColor(ContextCompat.getColor(this@MainActivity,R.color.green))
-                        setTextColor(ContextCompat.getColor(this@MainActivity,R.color.white))
+                        strokeColor = ColorStateList.valueOf(
+                            ContextCompat.getColor(
+                                this@MainActivity, R.color.green
+                            )
+                        )
+                        setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.green))
+                        setTextColor(ContextCompat.getColor(this@MainActivity, R.color.white))
                     }
-                    updateScoreData(questionNo,"wrong")
+                    updateScoreData(questionNo, "wrong")
                 }
             }
         }
@@ -291,7 +330,8 @@ class MainActivity : AppCompatActivity() {
 
         val timeFormat = if (amPm == Calendar.AM) "AM" else "PM"
         val formattedHour = if (hour == 0) 12 else hour
-        val timeNow = String.format(getString(R.string.current_time_value),formattedHour,minute,timeFormat)
+        val timeNow =
+            String.format(getString(R.string.current_time_value), formattedHour, minute, timeFormat)
 
         binding?.btnTimePicker?.text = timeNow
     }
@@ -311,7 +351,7 @@ class MainActivity : AppCompatActivity() {
         timePicker.addOnPositiveButtonClickListener {
             val calender = Calendar.getInstance()
             val selectedHour = timePicker.hour
-            val selectedMinute =  timePicker.minute
+            val selectedMinute = timePicker.minute
             val seconds = calendar.get(Calendar.SECOND)
             val AM_PM = calender.get(Calendar.AM_PM)
             val timeFormat = if (AM_PM == Calendar.AM) 0 else 1
@@ -356,7 +396,7 @@ class MainActivity : AppCompatActivity() {
             endTime = timeLeftInMillis,
             userStatus = viewModel.userState
         )
-        PreferenceUtil(this).saveHashMapToPreferences("data",viewModel.userAnswerDataMap)
+        PreferenceUtil(this).saveHashMapToPreferences("data", viewModel.userAnswerDataMap)
         questionCountDown?.cancel()
     }
 
@@ -379,7 +419,7 @@ class MainActivity : AppCompatActivity() {
         val questionObj = flagChallenge.questions?.get(newQuestNo)
         val countryList = questionObj?.countries
 
-        when(userState) {
+        when (userState) {
             PreferenceUtil.UserState.ON_TIME_RUNNING.value -> {
                 questionNo = newQuestNo
                 if (timeLeftInMillis != 0L) {
@@ -391,6 +431,7 @@ class MainActivity : AppCompatActivity() {
                     //PreferenceUtil(this).clearPreferences()
                 }
             }
+
             PreferenceUtil.UserState.ON_ANSWER_VALIDATING.value -> {
                 questionNo = newQuestNo
                 Handler(Looper.getMainLooper()).postDelayed({
@@ -399,12 +440,14 @@ class MainActivity : AppCompatActivity() {
                         countryList = countryList
                     )
                     startQuestionTimer()
-                },1000)
+                }, 1000)
                 binding?.challengeView?.isVisible = true
             }
+
             PreferenceUtil.UserState.ON_GAME_OVER.value -> {
                 showScoreView()
             }
+
             PreferenceUtil.UserState.ON_GAME_SCORE_VIEW.value -> {
                 binding?.challengeView?.isVisible = false
                 binding?.timeScheduleView?.isVisible = false
