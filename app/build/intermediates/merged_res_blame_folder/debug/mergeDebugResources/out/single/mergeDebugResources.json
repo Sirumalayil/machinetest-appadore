@@ -1,0 +1,406 @@
+[
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxhdpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxhdpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_newziland.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_newziland.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-anydpi-v24_belize__bz_.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-anydpi-v24\\belize__bz_.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_japan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-hdpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-hdpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_lesotho.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_lesotho.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_gabon.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_jersey.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-hdpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-hdpi\\belize__bz_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_ecuador.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_uae.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_uae.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-ldpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-ldpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_gabon.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_ecuador.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\color_button_selector.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\color\\button_selector.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_turkmenistan.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_turkmenistan.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxhdpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxhdpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_newziland.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_saint_pierre.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_saint_pierre.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_jersey.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_jersey.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_japan.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_gabon.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_czech_republic.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_czech_republic.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\layout_recycler_list_item_layout.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\layout\\recycler_list_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxhdpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxhdpi\\belize__bz_.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable_flag_nz.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\drawable\\flag_nz.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-mdpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-mdpi\\belize__bz_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_aruba.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_aruba.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_ecuador.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_ecuador.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_paraguay.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_paraguay.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-anydpi-v24_ic_question_count_bg.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-anydpi-v24\\ic_question_count_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xhdpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xhdpi\\belize__bz_.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xhdpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xhdpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-ldpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-ldpi\\belize__bz_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_gabon.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_gabon.xml"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_ecuador.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_jersey.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_newziland.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_newziland.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_japan.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_japan.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_belize.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_belize.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_jersey.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_belize.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_belize.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_ecuador.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_gabon.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_newziland.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_gabon.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/layout_activity_main.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_belize.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_jersey.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_jersey.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xhdpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xhdpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_belize.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxhdpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxhdpi/ic_japan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable_ic_martinique.xml.flat",
+        "source": "com.example.machintest_appadore.app-main-49:/drawable/ic_martinique.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_belize.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-mdpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-mdpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_japan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-hdpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-hdpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-anydpi-v24_gabon__ga_.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-anydpi-v24\\gabon__ga_.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_kyrgystan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_kyrgystan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-ldpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-ldpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxxhdpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxxhdpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_belize.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_belize.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_newziland.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxxhdpi_belize__bz_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxxhdpi\\belize__bz_.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable_ic_timer_text_bg.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\drawable\\ic_timer_text_bg.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xhdpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xhdpi/ic_japan.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-xxxhdpi_ic_question_count_bg.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-xxxhdpi\\ic_question_count_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable_group_1171274786.xml.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\drawable\\group_1171274786.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-hdpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-hdpi/ic_ecuador.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\drawable-mdpi_gabon__ga_.png.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-pngs-43:\\drawable-mdpi\\gabon__ga_.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_japan.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_japan.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-xxxhdpi_ic_jersey.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-xxxhdpi/ic_jersey.png"
+    },
+    {
+        "merged": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-debug-47:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\356400214\\.gradle\\daemon\\8.7\\com.example.machintest_appadore.app-main-49:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_gabon.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_gabon.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-ldpi_ic_newziland.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-ldpi/ic_newziland.png"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-anydpi-v24_ic_kyrgystan.xml.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-anydpi-v24/ic_kyrgystan.xml"
+    },
+    {
+        "merged": "com.example.machintest_appadore.app-debug-47:/drawable-mdpi_ic_ecuador.png.flat",
+        "source": "com.example.machintest_appadore.app-pngs-43:/drawable-mdpi/ic_ecuador.png"
+    }
+]

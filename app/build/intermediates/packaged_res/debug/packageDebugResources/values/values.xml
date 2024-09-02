@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E93D06</color>
+    <color name="dark_grey">#90999292</color>
+    <color name="green">#139204</color>
+    <color name="grey">#80D9D9D9</color>
+    <color name="light_grey">#80DED8D8</color>
+    <color name="primary_blue">#0559AD</color>
+    <color name="red">#D5060E</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">MachinTest-AppAdore</string>
+    <string name="correct">CORRECT</string>
+    <string name="score">SCORE:</string>
+    <string name="wrong">WRONG</string>
+    <style name="Base.Theme.MachinTestAppAdore" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+    </style>
+    <style name="Theme.MachinTestAppAdore" parent="Base.Theme.MachinTestAppAdore"/>
+</resources>
